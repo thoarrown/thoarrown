@@ -7,9 +7,10 @@ Hello, I'm Tho. I'm FullStack Javascript developer, based in Ho Chi Minh City ðŸ
 
 You can see what I am currently up to on ngaocode.com.
 
+### Support Me
+You can support me and buy me a coffee [Buy me a coffee](https://www.buymeacoffee.com/ngaocode), if you want.
 
 ## Stay in touch
 - Website - [https://ngaocode.com](https://ngaocode.com/)
 - Linkedin - [https://linkedin.com/in/thoarrow](https://linkedin.com/in/thoarrow)
 - Twitter - [Tho Arrow](https://twitter.com/arrow_tho)
-- 
