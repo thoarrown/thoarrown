@@ -1,3 +1,6 @@
+
+[![GitHub Views](https://komarev.com/ghpvc/?username=thorrown&color=FAC151)][1]
+
 ### Hi there 👋
 
 <!--
