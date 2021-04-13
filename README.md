@@ -1,5 +1,5 @@
 
-[![GitHub Views](https://komarev.com/ghpvc/?username=thorrown&color=FAC151)][1]
+![GitHub Views](https://komarev.com/ghpvc/?username=thorrown&color=FAC151)
 
 ### Hi there 👋
 
