@@ -1,0 +1,9 @@
+type Query {
+  viewer: User!
+  user(username: String!, page: Int): Username!
+  post(slug: String!, hostname: String): Post!
+}
+
+type Mutation {
+  updateName(name: String!): User!
+}

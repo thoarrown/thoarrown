@@ -1,0 +1,65 @@
+{
+  "name": "thoarrown",
+  "version": "1.0.0",
+  "description": "My Home 🏚 - I share every thing I learn, I know and I do at Software dev and my life on my blog with 2 language VietNamese and English.",
+  "homepage": "https://ngaocode.com",
+  "repository": "https://github.com/thoarrown/thoarrown",
+  "author": {
+    "name": "Tho Nguyen",
+    "email": "thoarrown@gmail.com",
+    "url": "https://ngaocode.com"
+  },
+  "site": {
+    "title": "Tho Nguyen",
+    "openGraph": {
+      "type": "",
+      "locale": ""
+    }
+  },
+  "license": "MIT",
+  "private": "true",
+  "scripts": {
+    "codegen": "graphql-let",
+    "dev": "yarn codegen && next",
+    "build": "yarn codegen && next build",
+    "test": "yarn codegen && jest",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.1.3",
+    "@graphql-tools/load-files": "6.0.18",
+    "@graphql-tools/merge": "6.0.18",
+    "@graphql-tools/schema": "6.0.18",
+    "apollo-server-micro": "^2.16.1",
+    "graphql": "15.3.0",
+    "lodash": "^4.17.21",
+    "next": "^10.2.0",
+    "next-seo": "^4.24.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.17.8",
+    "@graphql-codegen/plugin-helpers": "^1.17.8",
+    "@graphql-codegen/typescript": "^1.17.8",
+    "@graphql-codegen/typescript-operations": "^1.17.8",
+    "@graphql-codegen/typescript-react-apollo": "^2.0.6",
+    "@graphql-codegen/typescript-resolvers": "^1.17.8",
+    "@types/lodash": "^4.14.168",
+    "@types/react": "^16.9.46",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-test-renderer": "16.9.3",
+    "@types/styled-components": "^5.1.9",
+    "babel-jest": "26.3.0",
+    "cypress": "^7.3.0",
+    "graphql-let": "0.x",
+    "graphql-tag": "2.11.0",
+    "jest": "26.4.0",
+    "react-test-renderer": "16.13.1",
+    "typescript": "^3.9.7",
+    "yaml-loader": "0.6.0"
+  }
+}

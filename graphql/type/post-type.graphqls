@@ -1,0 +1,9 @@
+type Post {
+  _id: ID!
+  content: String!
+  title: String!
+  type: String!
+  slug: String!
+  brief: String
+  tags: [Tag]!
+}

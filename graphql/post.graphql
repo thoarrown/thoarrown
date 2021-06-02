@@ -1,0 +1,14 @@
+query Post($slug: String!, $hostname: String) {
+  post(slug: $slug, hostname: $hostname) {
+    _id
+    content
+    title
+    type
+    slug
+    tags {
+      _id
+      name
+      slug
+    }
+  }
+}

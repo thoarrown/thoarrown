@@ -1,0 +1,29 @@
+# import Partial from './partial.graphql'
+
+query Viewer {
+  viewer {
+    ...Partial
+    status
+  }
+}
+
+query User($username: String!, $page: Int) {
+  user(username: $username) {
+    publication {
+      posts(page: $page) {
+        title
+        brief
+        slug
+        cuid
+      }
+    }
+  }
+}
+
+mutation UpdateName($name: String!) {
+  updateName(name: $name) {
+    id
+    name
+    status
+  }
+}

@@ -1,0 +1,20 @@
+type User {
+  id: ID!
+  name: String!
+  status: String!
+}
+
+type Publication {
+  posts(page: Int): [Post]
+}
+
+type Post {
+  title: String!
+  brief: String!
+  slug: String!
+  cuid: String!
+}
+
+type Username {
+  publication: Publication!
+}
