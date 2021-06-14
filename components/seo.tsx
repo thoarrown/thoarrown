@@ -19,8 +19,7 @@ const SEO = (props: Props) => {
   const title = props.title ? `${props.title} | ${ME.name}` : PKG.site.title;
   const {
     description = PKG.description,
-    // type = PKG.site.openGraph.type,
-    // locale = PKG.site.openGraph.locale,
+    type = PKG.site.openGraph.type,
     image,
     article,
   } = props;
@@ -37,9 +36,8 @@ const SEO = (props: Props) => {
         title,
         description,
         url,
-        type,
-        locale,
         article,
+        type,
         images: [
           {
             url: `${PKG.homepage}${PKG.site.openGraph.image.url}`,

@@ -27,6 +27,8 @@ const BlogPage = ({ blog }: Props) => (
 
 export default BlogPage;
 
-export const getStaticProps: GetStaticProps<Props> = async () => ({
-  props: { blog: readBlog() },
-});
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  return {
+    props: { blog: [] },
+  };
+};

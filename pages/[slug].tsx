@@ -12,13 +12,11 @@ type Params = {
 
 type Props = {
   post: Post;
-  morePosts: Post[];
+  morePosts?: Post[];
   preview?: boolean;
 };
 
-const PostPage = ({ post, morePosts, preview }: Props) => {
-  console.log(post);
-
+const PostPage = ({ post }: Props) => {
   return (
     <div>
       PostPage <div dangerouslySetInnerHTML={{ __html: post.content }} />
