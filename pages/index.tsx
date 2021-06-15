@@ -6,7 +6,7 @@ const Index = () => {
   const { data } = usePostQuery({
     variables: {
       slug: "20-ultimate-css-tricks-and-sass-shorthands-for-code-efficiency",
-      hostname: process.env.HOSTNAME,
+      hostname: process.env.HOSTNAME || "",
     },
   });
 
@@ -14,7 +14,7 @@ const Index = () => {
     <MainLayout>
       <Link href="/about">
         <a>about</a>
-      </Link>{" "}
+      </Link>
       page.
       <div></div>
       {JSON.stringify(data?.post)}

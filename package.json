@@ -13,14 +13,14 @@
     "title": "Tho Nguyen",
     "openGraph": {
       "type": "website",
-      "image":{
+      "image": {
         "url": "/static/og.jpg",
         "width": 1200,
         "height": 630
       }
     },
     "twitter": {
-      "card":"summary_large_image"
+      "card": "summary_large_image"
     }
   },
   "license": "MIT",
@@ -46,6 +46,7 @@
     "next-themes": "^0.0.14",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-icons": "^4.2.0",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
     "styled-components": "^5.3.0"
