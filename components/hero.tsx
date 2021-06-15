@@ -5,7 +5,7 @@ interface Props {}
 export default function Hero({}: Props): ReactElement {
   return (
     <div className="md:pt-[75px] w-full md:h-[30rem] grid grid-cols-1 grid-flow-row	">
-      <div className="relative col-span-full	col-start-1	row-start-1 overflow-hidden z-[-1] bg-dark-blue">
+      <div className="relative col-span-full	col-start-1	row-start-1 overflow-hidden z-[-1] dark:bg-dark-blue bg-blue">
         {/* <img
           className="inset-0 absolute w-full h-full object-cover  "
           src="https://source.unsplash.com/random"
@@ -17,13 +17,13 @@ export default function Hero({}: Props): ReactElement {
           src="/static/avatar.jpg"
         />
         <div className="md:ml-12">
-          <h1 className="text-2xl font-semibold">ThoArrow</h1>
+          <h1 className="text-2xl my-2 font-bold">ThoArrow</h1>
           <p className="text-sm md:text-base">
             Hi, my name is Tho, a Software Engineer (SE) in Ho Chi Minh City. I
             interested to develop software to solve problems in real life.
             <br />
-            Especially, I love blogging to inspire people and want to contribute
-            to the community.
+            Especially, I love writing blogs to inspire people and would like to
+            contribute to the community.
           </p>
         </div>
       </div>
