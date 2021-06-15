@@ -55,6 +55,13 @@ const SEO = (props: Props) => {
         handle: `@${ME.username}`,
         cardType: PKG.site.twitter.card,
       }}
+      additionalLinkTags={[
+        {
+          rel: "icon",
+          href: "/static/avatar.jpg",
+          type: "image/x-icon",
+        },
+      ]}
     />
   );
 };

@@ -26,7 +26,7 @@ module.exports = {
       colors: {
         blue: "#9CB3C9",
         "darker-blue": "#0E2439",
-        "dark-blue": "#0E2439",
+        "dark-blue": "#1d344a",
         orange: "#F15C41",
         gray: "#797979",
         "lighter-gray": "#9E9E9E",
@@ -39,6 +39,8 @@ module.exports = {
         "light-white": "#EFF3FF",
         "active-col": "#F0F6FF",
         "gray-border": "#E5E5E5",
+        "darker-blue-opacity": "rgba(14, 36, 57, 0.85)",
+        "white-opacity": "rgba(255, 255, 255, 0.85)",
       },
     },
   },

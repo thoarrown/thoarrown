@@ -1,7 +1,8 @@
-import Link from "next/link";
 import { PostDocument, usePostQuery } from "~/graphql/post.graphql";
 import { initializeApollo } from "../lib/apollo";
 import { MainLayout } from "~/components/layouts/MainLayout";
+import SEO from "~/components/seo";
+
 const Index = () => {
   const { data } = usePostQuery({
     variables: {
@@ -11,14 +12,13 @@ const Index = () => {
   });
 
   return (
-    <MainLayout>
-      <Link href="/about">
-        <a>about</a>
-      </Link>
-      page.
-      <div></div>
-      {JSON.stringify(data?.post)}
-    </MainLayout>
+    <>
+      <SEO />
+      <MainLayout hero>
+        page.
+        {JSON.stringify(data?.post.title)}
+      </MainLayout>
+    </>
   );
 };
 

@@ -5,12 +5,17 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
   }
   body {
-    @apply antialiased bg-white text-darker-blue dark:bg-darker-blue dark:text-white;
+    @apply antialiased bg-white text-darker-blue dark:bg-darker-blue dark:text-white text-base;
   }
 
   strong {
     @apply font-semibold;
+  }
+
+  button {
+    @apply focus:outline-none;
   }
 }
