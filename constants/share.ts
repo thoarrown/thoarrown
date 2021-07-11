@@ -4,7 +4,7 @@ export { PKG };
 
 export const ME = {
   ...PKG.author,
-  username: "thoarrow",
+  username: "thoarrown",
   avatarURL: "/static/avatar.jpg",
 };
 
