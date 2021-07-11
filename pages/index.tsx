@@ -6,7 +6,7 @@ import Experience from "~/components/experience";
 import Work from "~/components/work";
 
 const Index = () => {
-  const { data } = usePostQuery({
+  const {} = usePostQuery({
     variables: {
       slug: "20-ultimate-css-tricks-and-sass-shorthands-for-code-efficiency",
       hostname: process.env.HOSTNAME || "",

@@ -2,7 +2,7 @@ import React from "react";
 
 interface Props {}
 
-const Experience = (props: Props) => {
+const Experience = ({}: Props) => {
   return (
     <div className=" md:px-0 px-6 ">
       <div className="my-8">
