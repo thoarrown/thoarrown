@@ -5,13 +5,8 @@ interface Props {}
 export default function Hero({}: Props): ReactElement {
   return (
     <div className="md:pt-[75px] w-full md:h-[30rem] grid grid-cols-1 grid-flow-row	">
-      <div className="relative col-span-full	col-start-1	row-start-1 overflow-hidden z-[-1] dark:bg-dark-blue bg-blue">
-        {/* <img
-          className="inset-0 absolute w-full h-full object-cover  "
-          src="https://source.unsplash.com/random"
-        /> */}
-      </div>
-      <div className="col-start-1	row-start-1 m-auto max-w-[90rem] flex md:flex-row flex-col px-6 py-10">
+      <div className="relative col-span-full	col-start-1	row-start-1 overflow-hidden z-[-1] dark:bg-dark-blue bg-blue"></div>
+      <div className="col-start-1	row-start-1 m-auto max-w-[90rem] flex md:flex-row flex-col md:px-0 px-6 py-10">
         <img
           className="md:w-[12.8rem] md:h-[12.8rem] w-32 h-32 rounded-full"
           src="/static/avatar.jpg"

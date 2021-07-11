@@ -2,6 +2,8 @@ import { PostDocument, usePostQuery } from "~/graphql/post.graphql";
 import { initializeApollo } from "../lib/apollo";
 import { MainLayout } from "~/components/layouts/MainLayout";
 import SEO from "~/components/seo";
+import Experience from "~/components/experience";
+import Work from "~/components/work";
 
 const Index = () => {
   const { data } = usePostQuery({
@@ -15,8 +17,8 @@ const Index = () => {
     <>
       <SEO />
       <MainLayout hero>
-        page.
-        {JSON.stringify(data?.post.title)}
+        <Experience />
+        <Work />
       </MainLayout>
     </>
   );
