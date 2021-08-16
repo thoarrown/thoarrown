@@ -4,13 +4,14 @@ interface Props {}
 
 export default function portfolio({}: Props): ReactElement {
   const WorkItem = ({
+    id,
     desc,
     title,
     slug,
     image,
   }: WorkItemProps): ReactElement => (
     <div className="h-full">
-      <a className="cursor-pointer" href={slug}>
+      <a id={id} className="cursor-pointer" href={slug}>
         <img
           className="h-[20rem] w-full object-cover rounded-2xl"
           src={image}
@@ -43,7 +44,7 @@ export default function portfolio({}: Props): ReactElement {
       </h2>
       <ul className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
         {dataDummy.map((item, index) => (
-          <li className="" key={`workitem-${index}`}>
+          <li key={`workitem-${index}`}>
             <WorkItem {...item} />
           </li>
         ))}
