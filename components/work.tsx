@@ -11,7 +11,7 @@ export default function portfolio({}: Props): ReactElement {
     image,
   }: WorkItemProps): ReactElement => (
     <div className="h-full">
-      <a id={id} className="cursor-pointer" href={slug}>
+      <a id={id} target="_blank" className="cursor-pointer" href={slug}>
         <img
           className="h-[20rem] w-full object-cover rounded-2xl"
           src={image}
@@ -21,6 +21,7 @@ export default function portfolio({}: Props): ReactElement {
         <a
           href={slug}
           className="font-extrabold line-clamp-2 text-lg cursor-pointer dark:hover:text-blue mb-6"
+          target="_blank"
         >
           {title}
         </a>
@@ -28,6 +29,7 @@ export default function portfolio({}: Props): ReactElement {
         <div>
           <a
             href={slug}
+            target="_blank"
             className="mt-8 p-4 rounded-lg inline-block bg-darker-blue dark:bg-white text-center font-bold text-lg  dark:text-darker-blue text-white hover:bg-opacity-50  dark:hover:bg-opacity-50 "
           >
             Read more
@@ -39,7 +41,10 @@ export default function portfolio({}: Props): ReactElement {
 
   return (
     <div className="my-8 sm:px-0 px-8">
-      <h2 className="text-2xl font-bold pb-6 border-dark-blue dark:border-blue  border-b-[1px]">
+      <h2
+        id="my-works"
+        className="text-2xl font-bold pb-6 border-dark-blue dark:border-blue  border-b-[1px]"
+      >
         My Works
       </h2>
       <ul className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
