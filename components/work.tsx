@@ -52,6 +52,7 @@ export default function portfolio({}: Props): ReactElement {
   );
 }
 interface WorkItemProps {
+  id: string;
   title: string;
   desc: string;
   slug: string;
@@ -60,24 +61,28 @@ interface WorkItemProps {
 
 const dataDummy: WorkItemProps[] = [
   {
+    id: "work-publish-cms",
     title: "Publish CMS",
     desc: "Publish is a platform CMS for bloggers who want to focus on writing.",
     slug: "https://publish.vn/",
     image: "/static/publish-cms.png",
   },
   {
+    id: "work-demo-1",
     title: "Amet consectetur adipisicing elit.",
     desc: "Sed atque assumenda mollitia laudantium omnis harum iusto obcaecati quibusdam similique velit iste praesentium, ipsa quos officiis, earum, temporibus ducimus! Perspiciatis, eaque?",
     slug: "#",
     image: "https://source.unsplash.com/random",
   },
   {
+    id: "work-demo-2",
     title: "Lorem ipsum, dolor",
     desc: "Sed atque assumenda mollitia laudantium omnis harum iusto obcaecati quibusdam similique velit iste praesentium, ipsa quos officiis, earum, temporibus ducimus! Perspiciatis, eaque?",
     slug: "#",
     image: "https://source.unsplash.com/random",
   },
   {
+    id: "work-demo-2",
     title: "Amet consectetur adipisicing elit.",
     desc: "Sed atque assumenda mollitia laudantium omnis harum iusto obcaecati quibusdam similique velit iste praesentium, ipsa quos officiis, earum, temporibus ducimus! Perspiciatis, eaque?",
     slug: "#",
