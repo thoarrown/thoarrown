@@ -38,3 +38,5 @@ __generated__
 *.graphql.d.ts
 *.graphqls.d.ts
 .env
+
+.cache

@@ -34,7 +34,6 @@ export async function getStaticProps() {
       hostname: process.env.HOSTNAME,
     },
   });
-  console.log(query);
 
   return {
     props: {

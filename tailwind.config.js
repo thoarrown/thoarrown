@@ -19,6 +19,7 @@ module.exports = {
       lg: "2rem",
       xl: "2.2rem",
       "2xl": "2.4rem",
+      "3xl": "3rem",
     },
     extend: {
       colors: {

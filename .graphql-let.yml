@@ -1,8 +1,7 @@
 schema: "**/**/*.graphqls"
-schemaEntrypoint: "graphql/type-defs.graphqls"
 documents: "**/*.graphql"
 plugins:
-  - typescript
   - typescript-operations
   - typescript-react-apollo
-cacheDir: __generated__
+# ".cache" is now recommended to distinguish from "graphql-let/__generated__"
+cacheDir: .cache
