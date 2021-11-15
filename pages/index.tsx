@@ -27,7 +27,7 @@ const Index = () => {
 export async function getStaticProps() {
   const apolloClient = initializeApollo();
 
-  const query = await apolloClient.query({
+  await apolloClient.query({
     query: PostDocument,
     variables: {
       slug: "20-ultimate-css-tricks-and-sass-shorthands-for-code-efficiency",

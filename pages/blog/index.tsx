@@ -1,6 +1,6 @@
 import { GetStaticProps } from "next";
 import Link from "next/link";
-import { Post } from "~/graphql/post.graphql";
+import { Post } from "@graphql-types@";
 
 type Props = {
   blog: Post[];

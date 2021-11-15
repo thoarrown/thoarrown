@@ -1,7 +1,8 @@
 import React from "react";
 import { initializeApollo } from "../lib/apollo";
 import markdownToHtml from "../lib/markdownToHtml";
-import { PostDocument, Post } from "../graphql/post.graphql";
+import { PostDocument } from "../graphql/post.graphql";
+import { Post } from "@graphql-types@";
 import { handleRedirectsAndReturnData } from "../util/slug";
 
 type Params = {

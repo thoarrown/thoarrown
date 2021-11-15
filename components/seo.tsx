@@ -1,8 +1,5 @@
 import { NextSeo } from "next-seo";
-import {
-  OpenGraphImages as OpenGraphImage,
-  OpenGraphArticle,
-} from "next-seo/lib/types";
+import { OpenGraphMedia, OpenGraphArticle } from "next-seo/lib/types";
 import { useRouter } from "next/router";
 import { PKG, ME } from "~/constants/share";
 
@@ -11,7 +8,7 @@ type Props = {
   description?: string;
   type?: string;
   locale?: string;
-  image?: OpenGraphImage;
+  image?: OpenGraphMedia;
   article?: OpenGraphArticle;
 };
 
