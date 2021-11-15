@@ -1,4 +1,3 @@
-import { PostDocument, usePostQuery } from "~/graphql/post.graphql";
 import { initializeApollo } from "../lib/apollo";
 import { MainLayout } from "~/components/layouts/MainLayout";
 import SEO from "~/components/seo";
@@ -6,13 +5,6 @@ import Experience from "~/components/experience";
 import Work from "~/components/work";
 
 const Index = () => {
-  const {} = usePostQuery({
-    variables: {
-      slug: "20-ultimate-css-tricks-and-sass-shorthands-for-code-efficiency",
-      hostname: process.env.HOSTNAME || "",
-    },
-  });
-
   return (
     <>
       <SEO />
@@ -26,14 +18,6 @@ const Index = () => {
 
 export async function getStaticProps() {
   const apolloClient = initializeApollo();
-
-  await apolloClient.query({
-    query: PostDocument,
-    variables: {
-      slug: "20-ultimate-css-tricks-and-sass-shorthands-for-code-efficiency",
-      hostname: process.env.HOSTNAME,
-    },
-  });
 
   return {
     props: {
