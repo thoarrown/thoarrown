@@ -4,6 +4,7 @@ import Hero from "~/components/hero";
 import Footer from "../footer";
 interface MainLayoutProps {
   hero?: boolean;
+  children: JSX.Element | JSX.Element[];
 }
 
 export const MainLayout: React.FC<MainLayoutProps> = ({ children, hero }) => {
