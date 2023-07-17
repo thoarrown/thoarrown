@@ -73,7 +73,7 @@
     "postcss": "^8.3.3",
     "react-test-renderer": "18.1.0",
     "tailwind-scrollbar": "^2.0.0",
-    "tailwindcss": "^2.2.19",
+    "tailwindcss": "^3.3.3",
     "typescript": "^4.7.3",
     "yaml-loader": "0.8.0"
   }
